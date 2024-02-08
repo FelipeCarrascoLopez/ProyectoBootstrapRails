@@ -1,0 +1,28 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <%= link_to root_path, class: "logo d-flex align-items-center" do %>
+      <%= image_tag("logo.png", alt: "Descripción de la imagen") %>
+      <span class="d-none d-lg-block">NiceAdmin</span>
+    <% end %>
+    <i class="fas fa-list toggle-sidebar-btn"></i>
+  </div><!-- End Logo -->
+      <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0 rounded-circle" href="#" data-bs-toggle="dropdown">
+            <%= image_tag("profile-img.jpg", alt: "Foto de perfil", class: "img-fluid") %>
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
