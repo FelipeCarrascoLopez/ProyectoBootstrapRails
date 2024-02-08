@@ -4,3 +4,7 @@ import "controllers"
 
 import "popper"
 import "bootstrap"
+
+import "sidebar"
+
+import "header"
